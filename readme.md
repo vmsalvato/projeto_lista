@@ -14,7 +14,7 @@ O projeto teve como objetivo a criação de páginas com orientações e instru�
 ## Pontos de melhoria 
 
 - Tema: possibilitar a persistência do tema escolhido em outras páginas; 
-- Inputs: promover a exibição dos dados em tela que foram inseridos nos formulários;
+- Inputs: promover a exibição dos dados em tela que foram inseridos nos formulários (nome e prazo);
 - Exportação da Lista: exportar somente a lista final em .pdf ou .xlsx, contendo as tarefas, com o nome da lista e seu prazo.
 
 
