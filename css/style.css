@@ -173,18 +173,9 @@ a:hover{
 
 .btnVoltar{
     color: gray;
-    margin-bottom: 10%;
-}
-
-.btnVoltarLista{
-    color: gray;
     margin-bottom: 19%;
 }
 
-.btnVoltarLista:hover{
-    color:  #1CAEE8; 
-    text-decoration: none;
-}
 .btnVoltar:hover {
     color:  #1CAEE8; 
     text-decoration: none;
