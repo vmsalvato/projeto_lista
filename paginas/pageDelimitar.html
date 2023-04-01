@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Lista de afazeres</title>
+</head>
+<body>
+    <header id="topo">
+        <!-- Acessibilidade -->
+        <div class="col-12 d-none">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" href="#tema" accesskey="1">Tema [1]</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#aumenta" accesskey="2">Aumentar Fonte + [2]</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#diminui" accesskey="3">Diminuir Fonte - [3]</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#conteudo" accesskey="4">Ir para conteúdo [4]</a>
+                </li>
+            </ul>   
+        </div>
+        <nav class="navbar navbar-expand-sm navbar-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link menu btn btn-light" id="tema"  href="#"><img class="icone_lua" src="../img/moon.png" alt="icone lua"> Tema</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu btn btn-light" id="aumenta" href="#">Aumentar Fonte +</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link menu btn btn-light" id="diminui" href="#">Diminuir Fonte -</a>
+                    </li>
+                </ul>
+            </div>    
+        </nav>
+    </header>
+    <div id="conteudo">
+        <div class="container"> 
+            <div class="text-center textConteudo">
+                <p><strong>Antes de começar sua lista, responda algumas questões para delimitar seus afazeres</strong></p>
+            </div>
+            <form class="formularioDelimitar needs-validation" action="lista.html" method="post" novalidate> 
+                <div class="form-group col-md-6 offset-md-3">
+                    <label for="validationCustom001"><strong class="inserirNome">Nome da lista*</strong></label>
+                    <input type="text" class="form-control form-control-sm" id="validationCustom001" placeholder="Nome da lista" required>
+                        <div class="invalid-feedback">
+                            Campo nome obrigatório!
+                        </div>
+                        <div class="valid-feedback"> 
+                            Parece bom!
+                        </div>
+                        <br>
+                    <div>
+                        <label for="validationCustom002"><strong class="inserirNome">Data de início*</strong></label>
+                        <input type="date" class="form-control form-control-sm" id="validationCustom002" required>
+                            <div class="invalid-feedback">
+                                Campo data início obrigatório!
+                            </div>
+                            <div class="valid-feedback">
+                                Parece bom!
+                            </div>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="validationCustom003"><strong class="inserirNome">Data de término*</strong></label>
+                        <input type="date" class="form-control form-control-sm" id="validationCustom003" required>
+                            <div class="invalid-feedback">
+                                Campo data término obrigatório!
+                            </div>
+                            <div class="valid-feedback">
+                                Parece bom!
+                            </div>
+                    </div>
+                    <div class="text-center">
+                        <input type="submit" id="btnEnviar" class="linkName btnEnviar btn" value="Começar Lista">
+                        <p class="obrigatorio">* Obrigatório</p>
+                    </div>
+                </div>
+            </form>
+            <div class="text-center">
+                <a class="btn btnVoltar" href="pageName.html"><strong>↶ Voltar</strong></a>
+            </div>
+        </div>
+    </div>
+    <footer id="rodape">
+        <div class="container">
+            <p><strong>Lista de afazeres</strong></p> 
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="../js/scriptThree.js"></script>
+    <script>
+        //Validação bootstrap
+        (function () {
+            'use strict'
+
+            var forms = document.querySelectorAll('.needs-validation')
+
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+                })
+        })()
+    </script>
+</body>
+</html>

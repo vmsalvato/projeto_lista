@@ -1,0 +1,191 @@
+.menu {
+    margin: 10px 8px 8px 10px;
+}
+
+.icone_lua {
+    width: 22px; 
+    height: 22px;
+}
+
+.icone_lixeira {
+    width: 22px; 
+    height: 22px;
+}
+
+footer {
+    margin-top: 20px;
+    background-color: #1CAEE8;
+    padding: 15px 6px 6px 15px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.textConteudo{
+    margin-top: 25px;
+}
+
+.btnCriar {
+    margin-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #1CAEE8; 
+    text-decoration: none; 
+    border-radius: 30px;
+    font-size: inherit;
+    margin-bottom: 19%;
+}
+
+.btnImprimir{
+    margin-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #1CAEE8; 
+    text-decoration: none; 
+    border-radius: 30px;
+    font-size: inherit;
+    margin-bottom: 1%;
+}
+
+.btnEnviar {
+    margin-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #1CAEE8; 
+    text-decoration: none; 
+    border-radius: 30px;
+    font-size: inherit;
+}
+
+.btnEnviarLista {
+    margin-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #1CAEE8; 
+    text-decoration: none; 
+    border-radius: 30px;
+    font-size: inherit;
+   
+}
+
+a {
+    color: white; 
+    text-decoration: none;
+}
+.linkName {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.linkName:hover {
+    color:  white; 
+    text-decoration: none;
+}
+
+a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.textoLink {
+    color: gray; 
+}
+
+.textoLink:hover {
+    color:  #1CAEE8; 
+    text-decoration: none;
+}
+
+.boldWhite {
+    color: white;
+}
+
+.obrigatorio {
+    margin-top: 5px;
+    color: gray; 
+    font-size: inherit;
+    margin-bottom: 1%;
+}
+
+.obrigatorioLista {
+    margin-top: 5px;
+    color: gray; 
+    font-size: inherit;
+    text-align: center;
+   
+}
+
+.formularioName {
+    margin-top: 10%;
+}
+
+.formularioLista {
+    margin-top: 2%;
+}
+
+.formularioDelimitar {
+    margin-top: 2%;
+}
+
+
+.inserirNome {
+	font-size: inherit;
+}
+
+.btnEnviarLista {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btnEnviarLista:hover {
+    color:  white; 
+    text-decoration: none;
+}
+
+.tarefa{
+    height: 50px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    justify-content: space-between;
+    display: flex;
+    border-bottom: 3px solid #1CAEE8; 
+}
+
+.tarefa button{
+    height: 100%;
+    width: 40px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color: #1CAEE8; 
+}
+
+.dTarefas{
+    margin-bottom: 2%;
+}
+
+.btnVoltar{
+    color: gray;
+    margin-bottom: 10%;
+}
+
+.btnVoltarLista{
+    color: gray;
+    margin-bottom: 19%;
+}
+
+.btnVoltarLista:hover{
+    color:  #1CAEE8; 
+    text-decoration: none;
+}
+.btnVoltar:hover {
+    color:  #1CAEE8; 
+    text-decoration: none;
+}
